@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontcss -->
+    <link rel="stylesheet" href="css fonts/all.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Result System</title>
+</head>
+<body>
+    <div class="container mb-5">
+        <div class="row py-3">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(56, 56, 54);">
+
+                    <a href="" class="navbar-brand"><img src="img/moonlogoc.png" alt=""
+                            style="width: 30px; height: 30px;" class="mr-2 img-fluid">Result Base System
+                    </a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active"><a href="" class="nav-link">Home</a></li>
+                            <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle"
+                                    data-toggle="dropdown">About</a>
+                                <div class="dropdown-menu btn-outline-info">
+                                    <a href="" class="dropdown-item">Facebook</a>
+                                    <a href="" class="dropdown-item">twitter</a>
+                                    <a href="" class="dropdown-item">Instagram</a>
+                                    <a href="" class="dropdown-item">Linkin</a>
+                                    <a href="" class="dropdown-item">Github</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline" action="">
+                            <input type="search" class="form-control mr-sm-2" placeholder="search">
+                            <button class="btn btn-success my-2 my-sm-0">search</button>
+
+                        </form>
+                    </div>
+
+
+            </div>
+        </div>
+            <h3>Enter Student Name</h3> 
+            <input type="text" placeholder="Name" id="Name">
+        <table class="table table-bordered table-secondary my-3">
+            <thead class="bg-dark text-light">
+              <tr>
+                <th scope="col">Subject Name</th>
+                <th scope="col">Total Marks</th>
+                <th scope="col">Your Marks</th>
+                <th scope="col">Result Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class ="table">
+                <td>English</td>
+                <td>100</td>
+                <td><input type="number" id="english"></td>
+                <td rowspan="6">
+                    <h6 id= "per" class="bg-primary text-light"></h5>
+                        
+                    <h6 id="grade"></h5>
+                        
+                    <h6 id="remarks"></h5>
+                </td>
+              </tr>
+              <tr class ="table">
+                <td>Urdu</td>
+                <td>100</td>
+                <td><input type="number" id="urdu"></td>
+              </tr>
+              <tr class ="table">
+                <td>Math</td>
+                <td>100</td>
+                <td><input type="number" id="math"></td>
+                <td></td>
+              </tr>
+              <tr class ="table">
+                <td>Physics</td>
+                <td>100</td>
+                <td><input type="number" id="physics"></td>
+              </tr>
+              <tr class ="table">
+                <td>Chemistry</td>
+                <td>100</td>
+                <td><input type="number" id="chemistry"></td>
+              </tr>
+              <tr class ="table">
+                <td>Biology</td>
+                <td>100</td>
+                <td><input type="number" id="biology"></td>
+              </tr>
+              <tr>
+                <td>Total Marks</td>
+                <td>600</td>
+                <td>
+                  <span id="total"  class="bg-warning text-dark"></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn btn-success" onclick = "result()">Calculate</button>
+        
+
+    </div>
+
+    <!-- footer -->
+
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4 bg-dark text-light">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://web.facebook.com/profile.php?id=100012136203224" class="btn-floating btn-fb mx-1">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://twitter.com/moon_sheik" class="btn-floating btn-tw mx-1">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.instagram.com/moon_aw23/" class="btn-floating btn-gplus mx-1">
+          <i class="fab fa-instagram"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/in/moon-sheikh-3223301b3/" class="btn-floating btn-li mx-1">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://github.com/moonsheikh59" class="btn-floating btn-dribbble mx-1">
+          <i class="fab fa-github"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="https://web.facebook.com/profile.php?id=100012136203224">Moon-Sheikh</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+   
+
+
+<script src="dmc.js"></script>    
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- For fonts -->
+<script src="https://kit.fontawesome.com/0000000000.js" crossorigin="anonymous"></script>
+</body>
+</html>
